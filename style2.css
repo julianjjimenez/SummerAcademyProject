@@ -1,0 +1,60 @@
+#row{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#background{
+    position: absolute;
+    z-index: -1;
+}
+#example:hover{
+   background-color: #15c2d2;
+   font-weight: bolder;
+}
+
+#example:active{
+   background-color: #1096a2;
+   font-weight: bolder;
+}
+
+#example{
+    margin-top: 7px;
+     font-family: 'Source Sans Pro', sans-serif;
+     background-color: #ef5330;
+     font-weight: bold;
+}
+
+
+#navbar{
+    text-align: center;
+    color: red;
+}
+.navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+        font-family: 'Source Sans Po', sans-serif;
+}
+.navbar-centered .navbar-nav > li {
+    display: inline;
+    float: none;
+            display: inline-block;
+}
+
+:hover {
+    font-weight: bold;
+}
+
+body{
+    background:"";
+    
+}
+
+#picture{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
