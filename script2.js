@@ -5,7 +5,10 @@ $(document).ready(function(){
     $('img').hide();
     $(clicked_href).show();
 });
-    
+   $.get("index2.html", function(data){
+       $("#caro").replaceWith(data);
+       
+   }); 
     
     
    
