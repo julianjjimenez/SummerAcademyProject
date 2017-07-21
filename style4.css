@@ -10,8 +10,7 @@
 
 #example:hover {
     background-color: #15c2d2;
-    font-weight: bolder
-    color: black;
+    font-weight: bolder color: black;
 }
 
 #example:active {
@@ -61,11 +60,11 @@ body {
     float: right;
 }
 
-#jumbotron{
+#jumbotron {
     background-color: white;
 }
 
-#backform input{
+#backform input {
     background-color: lightgrey;
 }
 
@@ -75,39 +74,35 @@ body {
     text-align: center;
 }
 
-#textarea{
+#textarea {
     background-color: lightgrey;
 }
 
-
-#foot1s{
+#foot1s {
     padding-top: 10px;
     font-weight: bold;
     margin-bottom: 60px;
-    
 }
 
-#foot2s{
+#foot2s {
     font-weight: bold;
-    
 }
 
-#logo3{
+#logo3 {
     padding-top: 50px;
 }
 
-#sponsor{
-    color:#3F3B39;
+#sponsor {
+    color: #3F3B39;
     Font-weight: bolder;
     text-align: center;
 }
 
-.sponsor{
+.sponsor {
     float: right;
 }
 
-section{
+section {
     border: solid, white;
     background-color: white;
-    
 }

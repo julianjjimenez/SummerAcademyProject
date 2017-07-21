@@ -127,38 +127,46 @@ button.list-group-item:hover {
     font-weight: bolder;
 }
 
-section{
+section {
     border: solid, white;
     background-color: white;
-    
 }
 
-.jumbotron{
+.jumbotron {
     background-color: white;
 }
 
-#foot1s{
+#foot1s {
     padding-top: 10px;
     font-weight: bold;
     margin-bottom: 60px;
-    
 }
 
-#foot2s{
+#foot2s {
     font-weight: bold;
-    
 }
 
-#logo3{
+#logo3 {
     padding-top: 50px;
 }
 
-#sponsor{
-    color:#3F3B39;
+#sponsor {
+    color: #3F3B39;
     Font-weight: bolder;
     text-align: center;
 }
 
-.sponsor{
+.sponsor {
     float: right;
+}
+
+#quotes {
+    font-weight: bold;
+    color: #ef5330;
+    margin-bottom: 30px;
+}
+
+#studentq {
+    color: #15c2d2;
+    font-weight: bolder;
 }

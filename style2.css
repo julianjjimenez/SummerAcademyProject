@@ -11,13 +11,13 @@
 #example:hover {
     background-color: #15c2d2;
     font-weight: bolder;
-    color:black;
+    color: black;
 }
 
 #example:active {
     background-color: #1096a2;
     font-weight: bolder;
-    color:black;
+    color: black;
 }
 
 #example {
@@ -25,8 +25,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #ef5330;
     font-weight: bold;
-    color:black
-    ;
+    color: black;
 }
 
 #navbar {
@@ -47,8 +46,8 @@
 }
 
 body {
-    padding:0;
-    background-image:url(https://scripted.org/wp-content/uploads/2014/08/se_141-1650x723.jpg);
+    padding: 0;
+    background-image: url(https://scripted.org/wp-content/uploads/2014/08/se_141-1650x723.jpg);
 }
 
 #picture {
@@ -64,53 +63,45 @@ body {
     font-weight: bold;
 }
 
-.jumbotron{
+.jumbotron {
     background-color: white;
 }
 
-#foot1s{
+#foot1s {
     padding-top: 10px;
     font-weight: bold;
     margin-bottom: 60px;
     margin-left: 10px;
-    
 }
 
-#foot2s{
+#foot2s {
     font-weight: bold;
-    
 }
 
-#logo3{
+#logo3 {
     padding-top: 50px;
     margin-left: 10px;
 }
 
-#sponsor{
-    color:#3F3B39;
+#sponsor {
+    color: #3F3B39;
     Font-weight: bolder;
     text-align: center;
 }
 
-.sponsor{
+.sponsor {
     float: right;
 }
-section{
+
+section {
     border: solid, white;
     background-color: white;
-    
 }
 
-#container3{
+#container3 {
     margin-top: 100px;
 }
 
-#3dd{
-    margin-top:00px;
+#3dd {
+    margin-top: 00px;
 }
-
-
-
-
-
-

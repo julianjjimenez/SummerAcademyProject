@@ -72,107 +72,107 @@ body {
     font-weight: bold;
 }
 
-#advanced{
- color: #15c2d2;
+#advanced {
+    color: #15c2d2;
     font-weight: bold;
 }
 
-#intern{
-   color: #15c2d2;
-    font-weight: bold;  
+#intern {
+    color: #15c2d2;
+    font-weight: bold;
 }
 
-#curriculum{
+#curriculum {
     text-align: center;
     color: #3F3B39;
     font-weight: bold;
 }
 
 
-      /* Always set the map height explicitly to define the size of the div
+/* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-      	height:550px;
-        width: 100%;
-        
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      
-      
+
+#map {
+    height: 550px;
+    width: 100%;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #curriculum {
     color: #3F3B39;
     font-weight: bold;
-    right:0%;
+    right: 0%;
 }
 
 #curriculum:hover {
     color: #ef5330;
     font-weight: bolder;
-    right:0%;
+    right: 0%;
 }
 
 #curriculum:active {
     color: #1096a2;
     font-weight: bolder;
-    right:0%;
+    right: 0%;
 }
 
-#grad{
+#grad {
     height: 500px;
-    
 }
 
-#found{
-height:500px;
-width:820px;
+#found {
+    height: 500px;
+    width: 820px;
 }
 
-#jumbotron{
+#jumbotron {
     background-color: white;
 }
 
-#foot1s{
+#foot1s {
     padding-top: 10px;
     font-weight: bold;
     margin-bottom: 60px;
-    
 }
 
-#foot2s{
+#foot2s {
     font-weight: bold;
-    
 }
 
-#logo3{
+#logo3 {
     padding-top: 50px;
 }
 
-#sponsor{
-    color:#3F3B39;
+#sponsor {
+    color: #3F3B39;
     Font-weight: bolder;
     text-align: center;
 }
 
-.sponsor{
+.sponsor {
     float: right;
 }
 
-section{
+section {
     border: solid, white;
     background-color: white;
-    
 }
 
-#jumbotron5, #jumbotron6{
+#jumbotron5,
+#jumbotron6 {
     background-color: white;
 }
 
-#names{
+#names {
     border: solid;
     background-color: white;
     border-color: white;
