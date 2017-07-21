@@ -1,60 +1,116 @@
-#row{
+#row {
     margin-right: 30px;
     margin-top: 30px;
 }
 
-#background{
+#background {
     position: absolute;
     z-index: -1;
 }
-#example:hover{
-   background-color: #15c2d2;
-   font-weight: bolder;
+
+#example:hover {
+    background-color: #15c2d2;
+    font-weight: bolder;
+    color:black;
 }
 
-#example:active{
-   background-color: #1096a2;
-   font-weight: bolder;
+#example:active {
+    background-color: #1096a2;
+    font-weight: bolder;
+    color:black;
 }
 
-#example{
+#example {
     margin-top: 7px;
-     font-family: 'Source Sans Pro', sans-serif;
-     background-color: #ef5330;
-     font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ef5330;
+    font-weight: bold;
+    color:black
+    ;
 }
 
-
-#navbar{
+#navbar {
     text-align: center;
     color: red;
 }
+
 .navbar-centered .navbar-nav {
-        float: none;
-        text-align: center;
-        font-family: 'Source Sans Po', sans-serif;
+    float: none;
+    text-align: center;
+    font-family: 'Source Sans Po', sans-serif;
 }
-.navbar-centered .navbar-nav > li {
+
+.navbar-centered .navbar-nav>li {
     display: inline;
     float: none;
-            display: inline-block;
+    display: inline-block;
 }
 
-:hover {
-    font-weight: bold;
+body {
+    padding:0;
+    background-image:url(https://scripted.org/wp-content/uploads/2014/08/se_141-1650x723.jpg);
 }
 
-body{
-    background:"";
-    
-}
-
-#picture{
+#picture {
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
 }
+
+#h1Jumbotron {
+    text-align: center;
+    color: #3F3B39;
+    font-weight: bold;
+}
+
+.jumbotron{
+    background-color: white;
+}
+
+#foot1s{
+    padding-top: 10px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    
+}
+
+#foot2s{
+    font-weight: bold;
+    
+}
+
+#logo3{
+    padding-top: 50px;
+    margin-left: 10px;
+}
+
+#sponsor{
+    color:#3F3B39;
+    Font-weight: bolder;
+    text-align: center;
+}
+
+.sponsor{
+    float: right;
+}
+section{
+    border: solid, white;
+    background-color: white;
+    
+}
+
+#container3{
+    margin-top: 100px;
+}
+
+#3dd{
+    margin-top:00px;
+}
+
+
+
 
 
 

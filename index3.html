@@ -1,74 +1,416 @@
 <!DOCTYPE html>
 <html>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' href='style.css'>
-        <head>
-        
-            <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link rel='stylesheet' type='text/css' href='style3.css'>
 
-            <!-- Optional theme -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<head>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrSSBFSA1p-P-0yuL_B013h-QZupkgEAM"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-            <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-        
-    <title>scripted.org</title>
-        </head>
-            <body>
-                  <img id="picture" src="https://scripted.org/wp-content/uploads/2014/08/se_141-1650x723.jpg"></img>
- <div id="ScriptEd" class="container">
-            <div class="row">
-                <div class="col-xs-1"><img src="http://www.arborbrothers.org/wp-content/uploads/2016/08/scripted_primary_mark_orange.png" style="width:300px"></div>
-                <div class="col-xs-9"></div>
-                
-                
-                <div class="col-xs-2">
-                    <button id="example" type="button" class="btn btn-raised btn-lg">Donate</button>
-             </div>
-        </div>
- </div>
-        
-<nav class="navbar navbar-default navbar-centered">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script3.js"></script>
+  <title>scripted.org</title>
+</head>
+
+<body>
+  <div class="container">
+    <img id="picture" src="https://scripted.org/wp-content/uploads/2014/08/se_141-1650x723.jpg"></img>
+    <div id="ScriptEd" class="container">
+      <div class="row">
+        <div class="col-xs-1"><img src="http://www.arborbrothers.org/wp-content/uploads/2016/08/scripted_primary_mark_orange.png" style="width:300px"></div>
+        <div class="col-xs-9"></div>
+
+
+        <div class="col-xs-2">
+          <a href="index4.html"><button id="example" type="button" class="btn btn-raised btn-lg">
+            Donate</button>
+      </a>
+            </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-centered">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Menu</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="navbar2" class="nav navbar-nav">
-            <li><a href="index.html">Our Mission</a></li>
-            <li><a href="index2.html">Our People</a></li>
-            <li><a href="index3.html">Opprotunities</a></li>
-            <li><a href="index4.html">Get Involved</a></li>
-          </ul>
-        </div>
       </div>
-    </nav>
-    </body>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul id="navbar2" class="nav navbar-nav">
+          <li><a href="index.html">Our Mission</a></li>
+          <li><a href="index2.html">Our People</a></li>
+          <li><a href="index3.html">Opportunities</a></li>
+          <li><a href="index4.html">Get Involved</a></li>
+        </ul>
+      </div>
+  </div>
+  </nav>
+
+
+
+  </div>
+  <!-- <h3>My Google Maps Demo</h3> -->
+  <script>
+    function initMap() {
+      var uluru = {
+        lat: 40.7222351,
+        lng: -73.9941112
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        title: "title",
+        position: uluru,
+        map: map
+      });
+    }
+    initMap()
+  </script>
+  <div class="container">
+    <div id="jumbotron5" class="jumbotron">
+      <h1 id="Opportunities">Opportunities</h1>
+      <h3 id="Program">Program Description</h3>
+      <p>ScriptEd offers courses twice a week throughout the school year in our partner schools. Our courses are taught by software developers on a volunteer basis, ensuring that students not only have exposure to the most up-to-date knowledge available,
+        but also role models and potential mentors in the field. Depending on schools schedules and needs, the class can be held either during the school day or after school. ScriptEd partners with schools where at least 75% of the student body qualifies
+        for free or reduced price lunch.</p>
+      <p>In addition to coursework, ScriptEd students are exposed to the tech industry through field trips to start-ups and technology companies, engaging with guest speakers in-class and job shadowing opportunities. Each semester culminates in a Hackathon,
+        where students create projects in teams and compete for prizes. They present these projects to their classmates and families, partner firms and community members.</p>
+      <h3 id="Foundation">Foundations Program</h3>
+      <p>This project-based course in web development introduces students to the field of computer science and builds the foundational skills necessary for them to be successful in subsequent courses on other topics. Students build a series of web-based
+        Javascript programs in this course. Additionally, we begin to teach students industry best practices. For example, students must learn to use version control systems, how to work in teams, and how to debug programs.</p>
+      <center></center><img id="found" src="https://lh3.googleusercontent.com/YdmP73PPKtNJSsPoeZIoCv9Tv3oHhbrsz4xmh8jlTfLx1Pg4ZUtR6djNAqhgG_orcF1osReQJcF_WC8ai5AF6ULpSuBVqC9yR-ikyA=w1280-h800-rw-no"></img>
+      </center>
+      <h3 id="advanced">Advanced Courses</h3>
+      <p>In our second year course, students take a deeper dive into web programming and learn advanced Javascript concepts. We start the course with a review of the concepts learned during our Foundations Course, and then students delve more deeply into
+        JavaScript, using APIs, creating mobile applications, and other projects.</p>
+      <h3 id="intern">Internships</h3>
+      <p>ScriptEd’s most qualified students can apply for its six-week summer Internship Program. ScriptEd partners with companies around New York City to match students to internship positions. The goal of the Internship Program is to expose students to
+        professional networks and the technology industry. Students are eligible to enroll in the Internship Program after they complete ScriptEd’s Advanced Course with a high rating.</p>
+      <center><img id="grad" src="https://lh3.googleusercontent.com/EPh8c-n4zBCEsdoBDkZJWdC5DSQ-AzsLVe8z09MbDtdNcWFUuWCTgap6LY0vwmy1_e9arGcnvUCnalSl9XJA06mHZCqA30tkkJ68=w1280-h800-rw-no"></img>
+      </center>
+      <a id="curriculum" href="https://scripted.org/wp-content/uploads/2014/08/ScriptEdStudentSkillsRubric16-17.pdf">
+        <h1>Check Out Our Curriculum</h1>
+      </a>
+    </div>
+
+    <div id="jumbotron6" class="jumbotron">
+        <div id="map" style="height: 500px; width: 100%;"></div>
+        <h2>These are all the schools where we are located:</h1>
+      
+      </div>
+<script type="text/javascript">
+var locations = [
+
+      
+      ['Academy of Innovative Technology', 40.692853,-73.869010, 1],
+      ['Acorn Community High School', 40.678581,-73.961951, 2],
+      ['All City Leadership Secondary School',40.697564,-73.913097, 3],
+      ['Brooklyn HS for Law & Technology (BKLT)', 40.688510, -73.920528,4],
+      ['Brooklyn Institute of Liberal Arts (BILA)', 40.658490, -73.943275,5],
+      ['Brooklyn Prep High School', 40.715233, -73.954951,6],
+      ['City Polytechnic High School of Engineering, Architecture, and Technology',  40.695436, -73.985831, 7],
+      ['Clara Barton High School', 40.668834, -73.961679, 8],
+      ['Cristo Rey High School', 40.639224, -73.942302, 9],
+      ['East Harlem Tutorial Program', 40.790184, -73.942984, 10],
+      ['Frederick Douglas Academy II', 40.802382, -73.954057, 11],
+      ['George Westinghouse High School #1', 40.695844, -73.986038 , 12],
+      ['The Green School', 40.709620, -73.945038 , 13],
+      ['High School for Environmental Studies', 40.767821, -73.988341 , 14],
+      ['High School for Hospitality Management', 40.765389, -73.993109 , 15],
+      ['High School of Fashion Industries #1', 40.745481, -73.996340 , 16],
+      ['HS for Youth & Community Dev (YCDHS)',40.649361, -73.958205 , 17],
+      ['Hudson High School', 40.743157, -74.002515, 18],
+      ['Intl HS at Prospect Heights (IHS-PH)', 40.669809, -73.961511 , 19],
+      ['Landmark High School', 40.743171, -74.002658, 20],
+      ['Lower Manhattan Arts Academy (LOMA)', 40.716981, -73.989339 , 21],
+      ['Lyons Community School', 40.709691, -73.944712, 22],
+      ['Manhattan International HS (MIHS)', 40.765587, -73.959848 , 23],
+      ['Pathways in Technology HS (PTECH)', 40.675838, -73.939185, 24],
+      ['Promise Academy', 40.808562, -73.936800, 24],
+      ['Queens Voc & Tech HS', 40.741992, -73.928172, 25],
+      ['Richard Green High School', 40.705329, -74.012993 , 26],
+      ['Science Skills Center High School', 40.697324, -73.984789, 27],
+      ['Young Womens Leadership School (TYWLS)', 40.771297, -73.923743, 28],
+      ['UA Gateway School for Technology (UAG)', 40.763839, -73.990540, 29],
+      ['Urban Assembly High School of Music and Art',40.697199, -73.984660 , 30],
+      ['UA School of Design & Construction', 40.765357, -73.993077, 31],
+      ['Uncommon Charter High School',40.677459, -73.941910 , 32],
+      ['Uncommon Collegiate Charter High School (UCCHS)',40.684612, -73.948019, 33],
+      ['Wadleigh Secondary School',40.802444, -73.954162, 34],
+      ['Williamsburg Charter High School', 40.703405, -73.935957, 35],
+      
+    ];
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: new google.maps.LatLng(40.692853,-73.869010),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+  
+      <div id="names" class="container">
+    <div class="row">
+        <div class="col-xs-3">Academy of Innovative Technology (AoIT)</div>
+        <div class="col-xs-3">Acorn Community High School</div>
+        <div class="col-xs-3">All City Leadership Secondary School</div>
+        <div class="col-xs-3">Brooklyn HS for Law & Technology (BKLT)</div>
+        <div class="col-xs-3">Brooklyn Institute of Liberal Arts (BILA)</div>
+        <div class="col-xs-3">Brooklyn Prep High School</div>
+        <div class="col-xs-3">City Polytechnic High School</div>
+        <div class="col-xs-3">Clara Barton High School</div>
+        <div class="col-xs-3">Cristo Rey High School</div>
+        <div class="col-xs-3">East Harlem Tutorial Program</div>
+        <div class="col-xs-3">Frederick Douglas Academy II</div>
+        <div class="col-xs-3">George Westinghouse High School</div>
+        <div class="col-xs-3">The Green School</div>
+        <div class="col-xs-3">High School for Environmental Studies</div>
+        <div class="col-xs-3">High School for Hospitality Management</div>
+        <div class="col-xs-3">High School of Fashion Industries</div>
+        <div class="col-xs-3">HS for Youth & Community Dev (YCDHS)</div>
+        <div class="col-xs-3">Hudson High School</div>
+        <div class="col-xs-3">Intl HS at Prospect Heights (IHS-PH)</div>
+        <div class="col-xs-3">Landmark High School</div>
+        <div class="col-xs-3">Lower Manhattan Arts Academy (LOMA)</div>
+        <div class="col-xs-3">Lyons Community School</div>
+        <div class="col-xs-3">Manhattan International HS (MIHS)</div>
+        <div class="col-xs-3">Murry Bergtraum High School</div>
+        <div class="col-xs-3">Pathways in Technology HS (PTECH)</div>
+        <div class="col-xs-3">Promise Academy</div>
+        <div class="col-xs-3">Queens Voc & Tech HS</div>
+        <div class="col-xs-3">Richard Green High School</div>
+        <div class="col-xs-3">Science Skills Center High School</div>
+        <div class="col-xs-3">Young Women's Leadership School (TYWLS)</div>
+        <div class="col-xs-3">UA Gateway School for Technology (UAG)</div>
+        <div class="col-xs-3">Urban Assembly High School of Music and Art</div>
+        <div class="col-xs-3">UA School of Design & Construction</div>
+        <div class="col-xs-3">Uncommon Charter High School</div>
+        <div class="col-xs-3">Uncommon Collegiate Charter High School (UCCHS)</div>        
+        <div class="col-xs-3">Wadleigh Secondary School</div>        
+        <div class="col-xs-3">Williamsburg Charter High School</div>        
+  </div>
+</div>
+    </div>
     
     
+    <!-- 
+      Peter's:
+-- 
+-- 
+-- 
+
+-- 
+-- 
+-- 
+-- 
+-- 
+
+-- 
+-- 
+-- 
+-- #1
+
+-- 
+-- 
+-- 
+--  #1
 
 
 
 
 
+Julian/Lucas: 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- -->
 
+  <!-- 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtYE6KBwQpUkWKH0XAEU0lty1fpFqojNU&callback=initMap"
+  type="text/javascript"></script>
+  
+  -->
+<section class="footer border">
+    <div class="container-fluid">
+      <img id="logo3" class="logo" src="https://scripted.org/wp-content/themes/scripted/assets/images/logo.png">
+      <div class="row">
+        <div id="foot1s" class="col-sm-3 col-md-6">
+          ScriptEd is a New York based 501(c)(3)
+          <br>not for profit organization.
+          <br> Our mailing address is:
+          <br> 85 Broad St, 17th Floor
+          <br> New York, NY 10004
+        </div>
+        <div id="foot1s" class="col-sm-9 col-md-6">
+          <h4 id="sponsor">Our Sponsors</h4>
+          <div class="sponsor">
+            <a href="http://www.meetup.com/QueensJS/" target="_blank" title="Queens Js">
+              <img src="https://scripted.org/wp-content/uploads/2014/08/queens-js1.png">
+            </a>
+            <div class="sponsor">
+              <a href="http://www.nycommunitytrust.org/" target="_blank" title="The New York Community Trust">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/ny-community-trust2.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://brooklynjs.com/" target="_blank" title="Brooklyn JS">
+                <img src="https://scripted.org/wp-content/uploads/2014/11/brooklyn-js1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://manhattanjs.com/" target="_blank" title="Manhattan JS">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/manhattan-js1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://www.robinhood.org/" target="_blank" title="The Robin Hood Foundation">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/robin-hood1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://www.twilio.com/" target="_blank" title="Twilio">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/twilio.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="https://github.com/" target="_blank" title="GitHub">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/github.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://www.teachforamerica.org/" target="_blank" title="Teach For America">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/teach-for-america1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.google.com/" target="_blank" title="Google">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/google1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://www.cfgnyc.org/" target="_blank" title="The Catalog for Giving of New York City">
+                <img src="https://scripted.org/wp-content/uploads/2017/05/New-CFG-Logo-2016.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://sxsw.com/" target="_blank" title="SXSW">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/sxsw.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://wellmetgroup.org/" target="_blank" title="The Wellmet Group">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/wellmet-group1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.americanexpress.com/" target="_blank" title="American Express">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/american-express1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://www.thepinkertonfoundation.org/" target="_blank" title="The Pinkerton Foundation">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/pinkerton-foundation1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.ashoka.org/" target="_blank" title="Ashoka">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/ashoka1.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://csnyc.org/" target="_blank" title="NYC Foundation for Computer Science Education">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/csnyc.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.mozilla.org/en-US/" target="_blank" title="Mozilla">
+                <img src="https://scripted.org/wp-content/uploads/2014/08/mozilla.png">
+              </a>
+            </div>
+            <div class="sponsor">
+              <a href="http://www.accenture.com/us-en/pages/index.aspx" target="_blank" title="Accenture">
+                <img src="https://scripted.org/wp-content/uploads/2015/01/accenture-3.png">
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <p id="branding">@ScriptEd2017</p>
+  </section>
+</body>
 
-
-
-
-
-    
 </html>
 
+<!-- 
+AIzaSyCtYE6KBwQpUkWKH0XAEU0lty1fpFqojNU
+  
+  1) Open a tab for google maps
+
+  maps.google.com
+        
+   2) Look up every school on google maps and find out the longitude and latitude, 
+        if Google maps doesnt allow you to see the longitude and latitude then click
+        literally next to it and find the longitude and latitude for the spot next 
+        to it.
+    3) Create a variable 
+    
+    
+    Copy the longitude and latitude into the function "initMap". and rename the function
+    
+        Example: change it from "hsLocation" to "hsLocation1"
+    5)
+    
+    ) Delete these instructions after youre done with every instructions.
+    
+    
+        - Peter
+  
 
 
 
@@ -76,6 +418,52 @@
 
 
 
+    <script>
 
-
-
+      function initMap() {
+        var myLatLng = {lat: 41.692353, lng: -76.061183};
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        
+        
+        
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        var hsLocation = {lat: , lng: };
+        
+        
+        
+-->
